@@ -1,0 +1,86 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+section {
+  position: absolute;
+  width: max-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card article img {
+  max-height: 100%;
+  border-radius: 50%;
+  border: 0.2em solid #121212;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.card article {
+  height: 60%;
+  padding: 1em;
+}
+
+.card header {
+  background:  #003366;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 1.2em 1.2em 0em 0em;
+  height: 20%;
+}
+
+.card {
+  background: #96BEE650;
+  max-height: 100%;
+  border: 0.2em solid #121212;
+  border-radius: 4%;
+}
+
+
+footer a {
+  font-size: 1.6em;
+  height: 20%;
+}
+
+.card article p {
+  font-size: 1.3em;
+  text-align: center;
+  color: #777777;
+  line-height: 1.5;
+}
+
+.card article p::first-line {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #009CDE;
+}
+
+.card header h2 {
+  font-size: 1.5em;       
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card footer p {
+  font-size: 1.5em;        /* 24px */
+  float: left;
+}
+
+.card footer a:hover {
+  color: #009CDE;
+}
+
+
+
+
+
+
+
+
+
