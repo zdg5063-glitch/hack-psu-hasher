@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HCDD 411 - JavaScript Basics Assignment (v4)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>JavaScript Basics — Mini Real-World Tools (v4)</h1>
+    <p class="subtitle">Students: edit <code>script.js</code> only. HTML/CSS already done.</p>
+  </header>
+
+  <main class="container">
+    <!-- TASK 1 -->
+    <section class="card">
+      <h2>Task 1 (15 pts): Greeting + Click Counter</h2>
+      <p class="hint">Type your name and click the button.</p>
+
+      <div class="row">
+        <label>Your name
+          <input id="nameInput" type="text" placeholder="e.g., Amina" />
+        </label>
+        <button class="btn" onclick="task1Greet()">Greet</button>
+      </div>
+
+      <div class="output">
+        <div><span class="k">Message:</span> <span id="greetMsg">—</span></div>
+        <div><span class="k">Times greeted:</span> <span id="greetCount">0</span></div>
+      </div>
+    </section>
+
+    <!-- TASK 2 -->
+    <section class="card">
+      <h2>Task 2 (20 pts): Discount Calculator</h2>
+      <p class="hint">Enter a price and choose a discount type.</p>
+
+      <div class="row">
+        <label>Price ($)
+          <input id="priceInput" type="text" placeholder="e.g., 49.99" />
+        </label>
+
+        <label>Discount type
+          <select id="discountType">
+            <option value="none" selected>No discount</option>
+            <option value="student">Student (10%)</option>
+            <option value="senior">Senior (15%)</option>
+          </select>
+        </label>
+
+        <button class="btn" onclick="task2ComputeDiscount()">Compute</button>
+      </div>
+
+      <div class="output">
+        <div><span class="k">Final price:</span> <span id="finalPrice">—</span></div>
+        <div><span class="k">Category:</span> <span id="priceCategory">—</span></div>
+        <div class="msg" id="discountMsg"></div>
+      </div>
+    </section>
+
+    <!-- TASK 3 -->
+    <section class="card">
+      <h2>Task 3 (25 pts): Sum 1..N + Even/Odd</h2>
+      <p class="hint">Enter an integer N (1–5000). The page shows sum from 1 to N.</p>
+
+      <div class="row">
+        <label>N
+          <input id="nInput" type="text" placeholder="e.g., 10" />
+        </label>
+        <button class="btn" onclick="task3Compute()">Compute</button>
+      </div>
+
+      <div class="output">
+        <div><span class="k">Even/Odd:</span> <span id="evenOdd">—</span></div>
+        <div><span class="k">Sum (1..N):</span> <span id="sumResult">—</span></div>
+        <div class="msg" id="sumMsg"></div>
+      </div>
+    </section>
+
+    <!-- TASK 4 -->
+    <section class="card">
+      <h2>Task 4 (40 pts): OOP List Builder (Base + Derived "Class")</h2>
+      <p class="hint">
+        You will create a base "class" using <b>constructor functions</b> + <b>prototype</b>,
+        then a derived one.
+      </p>
+
+      <div class="row">
+        <label>Item text
+          <input id="oopItemInput" type="text" placeholder="e.g., Buy milk" />
+        </label>
+
+        <label>Item type
+          <select id="oopItemType">
+            <option value="normal" selected>Normal</option>
+            <option value="important">Important</option>
+          </select>
+        </label>
+
+        <button class="btn" onclick="task4Add()">Add</button>
+        <button class="btn btn-lite" onclick="task4RemoveLast()">Remove Last</button>
+        <button class="btn btn-lite" onclick="task4Clear()">Clear All</button>
+
+        <span class="pill" id="oopItemCount">0 items</span>
+      </div>
+
+      <ul class="list" id="oopItemsList"></ul>
+      <div class="msg" id="oopListMsg"></div>
+    </section>
+</main>
+
+  <footer class="footer">
+    <p>Tip: Use DevTools Console for debugging (<code>console.log</code>).</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
